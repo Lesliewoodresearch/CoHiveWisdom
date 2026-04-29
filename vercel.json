@@ -10,7 +10,6 @@
       "includeFiles": "src/**"
     }
   },
-  "installCommand": "npm install --legacy-peer-deps",
-  "buildCommand": "npm run build",
+  "buildCommand": "vite build",
   "outputDirectory": "dist"
 }
