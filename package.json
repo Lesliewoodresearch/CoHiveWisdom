@@ -2,6 +2,7 @@
   "name": "cohivewisdom",
   "private": true,
   "version": "0.0.1",
+  "packageManager": "pnpm@9.15.4",
   "type": "module",
   "scripts": {
     "build": "vite build",
