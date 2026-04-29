@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/" }
+  ],
+  "functions": {
+    "src/app/api/**/*.js": {
+      "includeFiles": "src/**"
+    },
+    "src/app/api/**/*.ts": {
+      "includeFiles": "src/**"
+    }
+  },
+  "buildCommand": "vite build",
+  "outputDirectory": "dist"
+}
