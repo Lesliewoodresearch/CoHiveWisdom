@@ -2,7 +2,15 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ],
-  "installCommand": "pnpm install",
-  "buildCommand": "pnpm run build",
+  "functions": {
+    "api/**/*.js": {
+      "includeFiles": "src/**"
+    },
+    "api/**/*.ts": {
+      "includeFiles": "src/**"
+    }
+  },
+  "installCommand": "npm install --legacy-peer-deps",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist"
 }
